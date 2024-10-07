@@ -39,13 +39,13 @@ export default function DateAndPlace() {
       transition={{ duration: 0.5 }}
       className="py-20 px-6 text-center"
     >
-      <h1 className="text-3xl font-bold mb-4 text-green-800/70">
+      <h1 className="text-3xl font-bold mb-4 text-[#597445] font-courgette">
         Date & Place
       </h1>
-      <p className="text-xl mb-8 text-gray-700">
+      <p className="text-xl mb-4 text-gray-700 font-courgette">
         7th of December, 2024, Saturday, 3:20 PM
       </p>
-      <p className="text-xl mb-8 text-gray-700">
+      <p className="text-xl mb-8 text-gray-700 font-courgette">
         Seoul WorldCup Convention Imperial Ballroom (2F)
       </p>
       <div className="relative w-full h-48 mb-4">
@@ -60,12 +60,12 @@ export default function DateAndPlace() {
       </div>
 
       <div className="max-w-sm mx-auto">
-        <h2 className="text-2xl font-semibold text-green-800/70 mb-4">
+        <h2 className="text-2xl font-semibold text-[#597445] font-courgette mb-4">
           December
         </h2>
         <div className="grid grid-cols-7 gap-2 mb-2">
           {days.map((day) => (
-            <div key={day} className="font-semibold text-green-800/70">
+            <div key={day} className={day === "Sun" ? "font-semibold text-red-700/80" : "font-semibold text-green-800/70"}>
               {day}
             </div>
           ))}
@@ -77,7 +77,7 @@ export default function DateAndPlace() {
                 key={dateIndex}
                 className={`p-2 ${
                   date === 7
-                    ? "bg-green-100 rounded-full font-bold text-green-600"
+                    ? "bg-[#729762]/80 rounded-full font-bold text-white"
                     : date === ""
                     ? "text-gray-800"
                     : "text-gray-600"
@@ -90,14 +90,14 @@ export default function DateAndPlace() {
         ))}
       </div>
 
-      <p className="text-lg font-semibold text-green-600 my-4">Kwangsu ❤️ Jiwon until wedding</p>
+      <p className="text-lg font-semibold text-[#597445] font-courgette mt-10 mb-4">Kwangsu ❤️ Jiwon until wedding</p>
       <div className="flex justify-center space-x-4 mb-4">
         {Object.entries(timeLeft).map(([key, value]) => (
           <div key={key} className="flex flex-col items-center">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-2">
-              <span className="text-2xl font-bold text-green-800/70">{value}</span>
+            <div className="w-16 h-16 bg-[#729762] rounded-full flex items-center justify-center mb-2">
+              <span className="text-2xl font-bold text-white">{value}</span>
             </div>
-            <span className="text-sm text-gray-600 capitalize">{key}</span>
+            <span className="text-sm text-gray-600 capitalize font-courgette">{key}</span>
           </div>
         ))}
       </div>

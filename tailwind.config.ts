@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['Quicksand', 'sans-serif'],
+        courgette: ['var(--font-courgette)', 'cursive'],
       },
       colors: {
         background: "var(--background)",

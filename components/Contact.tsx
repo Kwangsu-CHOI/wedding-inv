@@ -9,10 +9,10 @@ export default function Contact() {
       transition={{ duration: 0.5 }}
       className="py-20 px-6 text-center"
     >
-      <h1 className="text-2xl font-bold mb-8 text-gray-800">
+      <h1 className="text-2xl font-bold mb-8 text-[#597445] font-courgette">
         You are invited to our wedding
       </h1>
-      <div className="flex flex-row justify-center space-x-8 max-w-4xl mx-auto">
+      <div className="flex flex-row justify-center space-x-8 max-w-4xl mx-auto font-courgette">
         <div className="flex-1">
           <div className="relative w-full h-48 mb-4">
             <Image
@@ -24,8 +24,8 @@ export default function Contact() {
             />
           </div>
 
-          <div className="flex gap-1 items-baseline">
-            <h2 className="text-sm font-semibold mb-1 text-green-800">Groom</h2>
+          <div className="flex gap-1 items-baseline justify-center">
+            <h2 className="text-sm font-semibold mb-1 text-[#597445]">Groom</h2>
             <h2 className="mb-2 text-gray-700 text-nowrap">Kwangsu Choi</h2>
           </div>
 
@@ -53,12 +53,12 @@ export default function Contact() {
               className="rounded-lg"
             />
           </div>
-          
-          <div className="flex gap-1 items-baseline">
-            <h2 className="text-sm font-semibold mb-1 text-green-800">Bride</h2>
+
+          <div className="flex gap-1 items-baseline justify-center">
+            <h2 className="text-sm font-semibold mb-1 text-[#597445]">Bride</h2>
             <h2 className="mb-2 text-gray-700 text-nowrap">Jiwon Kang</h2>
           </div>
-        
+
           <p className="text-sm mb-2 text-gray-600">
             This woman I&apos;m marrying
             <br />

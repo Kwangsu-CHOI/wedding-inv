@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Quicksand } from "next/font/google";
+import { Quicksand, Courgette } from "next/font/google";
 import "./globals.css";
 
 import dynamic from 'next/dynamic'
@@ -8,8 +8,14 @@ const AudioPlayer = dynamic(() => import('../components/AudioPlayer'), { ssr: fa
 
 const quicksand = Quicksand({
   subsets: ["latin"],
-  display: "swap",
+
 });
+const courgette = Courgette({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-courgette',
+  display: 'swap',
+})
 
 
 
@@ -24,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={quicksand.className}>
+    <html lang="en" className={`${quicksand.className} ${courgette.variable}`}>
       <body className="antialiased w-full min-h-screen">{children}</body>
       <AudioPlayer />
     </html>

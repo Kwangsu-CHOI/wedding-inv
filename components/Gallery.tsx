@@ -28,7 +28,7 @@ export default function Gallery() {
       transition={{ duration: 0.5 }}
       className="py-10 px-4"
     >
-      <h2 className="text-xl font-bold mb-6 text-center text-green-600">
+      <h2 className="text-2xl font-bold mb-6 text-center text-[#597445] font-courgette">
         Gallery
       </h2>
       <div className="grid grid-cols-3 gap-1">
@@ -58,14 +58,14 @@ export default function Gallery() {
         {visibleImages < images.length ? (
           <button
             onClick={loadMore}
-            className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full text-sm"
+            className="bg-transparent hover:bg-[#597445] hover:text-white text-[#597445] font-bold py-2 px-4 rounded-full text-sm"
           >
-            View More
+            View More ⚆_⚆
           </button>
         ) : (
           <button
             onClick={collapse}
-            className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-full text-sm"
+            className="bg-transparent hover:bg-[#597445] hover:text-white text-[#597445] font-bold py-2 px-4 rounded-full text-sm"
           >
             Close
           </button>
